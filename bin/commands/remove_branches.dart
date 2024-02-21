@@ -26,17 +26,17 @@ class RemoveBranches {
       prompt: 'Select branches to delete',
       options: branches,
       defaults: List.filled(branches.length, true),
-    ).interact();
+    ).interact().map((e) => branches[e]).toList();
 
     await Future.wait(
       selected.map(
-        (e) => Process.start(
+        (branch) => Process.start(
           'git',
-          ['branch', '-d', branches[e]],
+          ['branch', '-d', branch],
         ),
       ),
     );
 
-    print('Branches deleted:\n\t${branches.join('\n\t')}');
+    print('Branches deleted:\n\t${selected.join('\n\t')}');
   }
 }
