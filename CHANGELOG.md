@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/rIIh/gitt-dart/compare/v1.0.3...v1.0.4) (2024-02-21)
+
+
+### Bug Fixes
+
+* lower dart min version to ^3.0.0 ([0e86af8](https://github.com/rIIh/gitt-dart/commit/0e86af8521c0412abbaf44363c32fc867acbb02c))
+
 ## [1.0.3](https://github.com/rIIh/gitt-dart/compare/v1.0.2...v1.0.3) (2024-02-21)
 
 
