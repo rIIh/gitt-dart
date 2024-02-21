@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/rIIh/gitt-dart/compare/v1.0.4...v1.0.5) (2024-02-21)
+
+
+### Bug Fixes
+
+* adjust result log message ([c3a928c](https://github.com/rIIh/gitt-dart/commit/c3a928c8a0803a3de7c9f402cf05bdb48e0a1609))
+
 ## [1.0.4](https://github.com/rIIh/gitt-dart/compare/v1.0.3...v1.0.4) (2024-02-21)
 
 

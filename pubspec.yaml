@@ -1,7 +1,7 @@
 name: gitt
 description: CLI tool to do git things
 repository: https://github.com/rIIh/gitt-dart
-version: 1.0.4
+version: 1.0.5
 
 environment:
   sdk: ^3.0.0
