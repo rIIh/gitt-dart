@@ -1,0 +1,24 @@
+
+name: release-it workflow
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: git config
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+      - run: npm i -g release-it @release-it/bumper @release-it/conventional-changelog
+      - run: npx release-it
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
