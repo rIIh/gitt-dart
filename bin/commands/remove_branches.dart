@@ -32,7 +32,7 @@ class RemoveBranches {
       selected.map(
         (branch) => Process.start(
           'git',
-          ['branch', '-d', branch],
+          ['branch', '-D', branch],
         ),
       ),
     );
