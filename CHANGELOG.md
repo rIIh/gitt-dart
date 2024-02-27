@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/rIIh/gitt-dart/compare/v1.0.5...v1.0.6) (2024-02-27)
+
+
+### Bug Fixes
+
+* **git:** use -D for force delete branch ([06642b1](https://github.com/rIIh/gitt-dart/commit/06642b1c169ff55483a66fd57f09bef31164f505))
+
 ## [1.0.5](https://github.com/rIIh/gitt-dart/compare/v1.0.4...v1.0.5) (2024-02-21)
 
 
